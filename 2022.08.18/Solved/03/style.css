@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "big_picture big_picture"
+    "our_services info_numbers"
+    "contact info_numbers";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.big_picture {
+  grid-area: big_picture;
+  position: relative;
+  background-image: url(image/image.jpg);
+  height: 100vh;
+  width: 98.9vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.head_name {
+  width: 20%;
+  border: 1px solid rgba(105, 107, 110, 0.5);
+  position: absolute;
+  top: 50px;
+  left: 95px;
+  box-shadow: 0.5px 2px 2px 2px rgba(105, 107, 110, 0.5);
+}
+
+.head_desc {
+  width: 300px;
+  height: 330px;
+  position: absolute;
+  right: 50px;
+  top: 200px;
+  background: rgb(131, 122, 122);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 122, 122, 1) 0%,
+    rgba(198, 196, 193, 1) 98%,
+    rgba(201, 199, 198, 1) 100%
+  );
+  text-align: right;
+  padding: 15px 15px 5px 10px;
+  color: white;
+
+  font-size: 1.2rem;
+  text-shadow: 0.1px 0.1px black;
+  box-shadow: 3px 3px 3px 3px rgba(105, 107, 110, 0.5);
+}
+
+.quotes {
+  font-size: 100px;
+  margin: 20px 0 0 0;
+  color: grey;
+}
+
+.desc {
+  margin-top: -55px;
+}
+
+.head_name h1 {
+  width: 50%;
+  line-height: 1.5;
+}
+
+.head_name p {
+  padding-left: 20px;
+}
+
+.head_name hr {
+  border: 1px solid white;
+  width: 40%;
+  position: absolute;
+  left: 20px;
+  bottom: 38px;
+}
+
+.our_services {
+  grid-area: our_services;
+  background-color: #efefef;
+  padding-right: 64px;
+}
+
+.our_services ul {
+  padding-inline-start: 20px;
+}
+
+.service_bold {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.our_services li {
+  margin-bottom: 36px;
+}
+
+.info_numbers {
+  grid-area: info_numbers;
+  background-color: #c5bbbb;
+  width: 350px;
+}
+
+.info_numbers li:first-child {
+  margin-top: 50px;
+}
+
+.info_numbers li p:first-child {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-weight: 20;
+}
+
+.info_numbers li p:nth-child(2) {
+  margin-bottom: 70px;
+}
+
+.info_numbers li:last-child p:last-child {
+  margin-bottom: 0px;
+}
+
+.info_numbers p {
+  margin-top: 0px;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: #efefef;
+}
+
+.contact h1 {
+  padding-left: 20px;
+}
+
+.contact hr {
+  border-top: 2px solid black;
+}
+
+.contact_items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.contact_items li span:first-child {
+  font-weight: 600;
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.contact form {
+  padding-left: 20px;
+}
+
+.contact button {
+  background-color: green;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.contact input {
+  background-color: #c5bbbb;
+  color: white;
+  height: 40px;
+  width: 300px;
+  border: 1px none #afa5a5;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}

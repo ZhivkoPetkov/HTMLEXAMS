@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+
+    header nav, nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .team-description-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .team-description-wrapper ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 20px 20px;
+    }
+
+    .choose-us {
+        padding: 10px 130px;
+    }
+
+    .choose-us ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .choose-us ul li:last-child {
+        margin-bottom: 20px;
+    }
+    
+    .blog-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 50px 50px;
+    }
+
+    .blog-list.item {
+
+    }
+  }
