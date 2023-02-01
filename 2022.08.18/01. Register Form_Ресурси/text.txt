@@ -1,0 +1,7 @@
+Registration Form
+First Name
+Last Name
+Email
+Password
+Confirm Password
+Register Now
