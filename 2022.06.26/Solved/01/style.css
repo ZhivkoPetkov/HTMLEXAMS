@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css');
+
+html {
+    font-family: Courgette;
+    background-color: lightgray;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    font-size: 50px;
+    position: absolute;
+    top: -140px;
+    left: 330px;
+}
+
+.title h3 {
+    color: #c00;
+    position: absolute;
+    top: -60px;
+    left: 535px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 50vw;
+}
+
+.card {
+    border-radius: 15px;
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card p:first{
+    margin-bottom: 40px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-img img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    text-align: center;
+    padding: 10px;
+}
+
+hr {
+    border: #c00 0.4px solid;
+    width: 95%;
+}
+
+i.fas {
+    color: #c00;
+}
